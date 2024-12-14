@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f3dadac9;
+}
+/* Start Heading Style*/
+header{
+    background-color: white;
+}
+.container{
+  
+    padding: 10px ;
+    width: 90%;
+    margin:  auto;
+}
+.container h1{
+    text-align: center;
+    text-shadow: 0px 4px 6px rgb(53, 44, 44);
+    font-style: italic;
+}
+/*End Heading Style*/
+/* Start Main content*/
+.main{
+    width: 60%;
+    margin: 30px auto;
+    background-color: white;
+    position: relative;
+    display: flow-root;
+    border-radius: 15px;
+
+}
+.counter{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50% ,-50%);
+    background-color: rgb(167, 50, 167);
+    padding: 3px;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    color: white;
+}
+/* quote tag*/
+.main{
+    box-shadow: 0px 6px 5px black;
+}
+.screen{
+ 
+    margin: 20px auto;
+    width: 90%;
+    padding: 15px 5px;
+    border-bottom: 3px solid #eee;
+}
+
+.screen p{
+    font-weight: bold;
+    text-transform: capitalize;
+    font-style: italic;
+    margin: 10px auto;
+    width: 80%;
+    color: black;
+    text-align: center;
+    
+
+    
+ 
+}
+.screen p::before{
+    content: "،،";
+    position: relative;
+    left: -14px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #d5adad;
+}
+.screen p::after{
+    content: ",,";
+    right: -15px;
+    position: relative;
+
+    font-weight: bold;
+    font-size: 20px;
+    color: #d5adad;
+    top: -5px;
+ 
+}
+/* btns part*/
+.btns{
+    display: flex;
+     align-items: center;
+    justify-content: space-around;
+    padding: 10px 0 ;
+    flex-wrap: wrap;
+
+    
+
+}
+#one,#two, #three{
+   text-wrap: wrap;
+    border: none;
+    border-radius: 6px;
+    padding: 2px 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+#one{
+    background-color:green;
+}
+#two{
+    background-color: rgb(107, 107, 205);
+}
+#three{
+    background-color: rgba(173, 32, 10, 0.868);
+}
+.autoOn,h4{
+    display: none;
+    width: 60px;
+    margin: 20px auto;
+}
+.dateToday{
+    display: block;
+    text-align: left;
+    margin: 15px auto;
+    width: fit-content;
+    font-weight: bold;
+    font-style: italic;
+}
+/* End Main content*/
+/*responsive design*/
+/* mobiles devices*/
+@media(min-width:320px)and (max-width:480px) {
+    .container{
+        width: 90%;
+        padding:10px ;
+        margin: 0 auto;
+     
+    }
+    .container h1{
+        font-size: 20px;
+        text-align: center;
+        
+    }
+
+    .screen{
+ 
+        margin: 20px auto;
+        width: 90%;
+        padding: 15px 5px;
+        border-bottom: 3px solid #eee;
+
+    }
+    .screen p{
+        font-size: 15px;
+        text-align: center;
+    }
+   
+    .btns button{
+        display: block;
+        margin: 10px auto;
+        width: 90%;
+    }
+    .dateToday{
+        font-size: 15px;
+        margin: 20px auto;
+    }
+}
+@media(min-width:481px)and (max-width:768px) {
+    .container{
+        width: 90%;
+        padding:20px ;
+        margin: 0 auto;
+     
+    }
+    .container h1{
+        font-size: 30px;
+        text-align: center;
+        
+    }
+
+    .screen{
+ 
+        margin: 20px auto;
+        width: 90%;
+        padding: 15px 15px;
+        border-bottom: 3px solid #eee;
+
+    }
+    .screen p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .btns{
+        
+        width: calc(90% /  4);
+        margin: 20px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    .dateToday{
+        font-size: 18px;
+        margin: 20px auto;
+    }
+   
+
+}
+@media(min-width:769px){
+    .container{
+        width: 95%;
+        padding:20px ;
+        margin: 0 auto;
+     
+    }
+    .container h1{
+        font-size: 35px;
+        text-align: center;
+        
+    }
+
+    .screen{
+ 
+        margin: 20px auto;
+        width: 95%;
+        padding: 15px 15px;
+        border-bottom: 5px solid #eee;
+
+    }
+    .counter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    .screen p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .btns{
+        
+        width: 95%;
+        margin: 20px auto;
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    
+    }
+    .dateToday{
+        font-size: 20px;
+        margin: 20px auto;
+    }
+}
