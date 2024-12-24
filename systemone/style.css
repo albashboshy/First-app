@@ -1,0 +1,573 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+body{
+    background-color: #eee;
+    
+}
+header{
+    box-shadow: 0 4px  9px #806a6a;
+    background-color: #eee;
+    padding: 2px 0px;
+  
+ 
+}
+.container{
+    margin: 0px auto ;
+    display: flex;
+
+    justify-content: space-between;
+    margin-right: 20px solid white;
+    
+    
+    
+   
+}
+.firstPart{
+  
+    display: flex;
+    align-items: center;
+  
+    gap:5px;
+   
+  
+}
+.firstPart .fa-bars{
+    font-size: 20px;
+}
+.firstPart img{
+    max-width: 50%;
+    font-weight: bold;
+}
+.firstPart input{
+    width: 60%;
+    font-size: 20px;
+    padding-left: 3px;
+   
+}
+.firstPart .fa-magnifying-glass{
+    background-color: blue;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+   
+   
+   
+}
+.firstPart img{
+    max-width: 600px;
+    height: 30px;
+    
+    border-radius: 3px;
+}
+.intlogo{
+    display: flex;
+    border: 1px solid #eee;
+    align-items: center;
+}
+.container .fa-circle-info{
+    padding: 0px 5px;
+    
+    background-color: transparent;
+    
+    
+  
+}
+
+/* nest second*/
+.second{
+    display: flex;
+    height: 30px;
+   
+}
+.nest-second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:6px;
+ 
+
+
+}
+.nest-second i,span{
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+  
+}
+
+
+.fourth{
+    margin: 0 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+   
+    align-items: center;
+    padding: 0 5px 0;
+   
+    
+}
+
+.fourth .fa-hotel{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.fourth div{
+    display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    gap: 5px;
+    font-size: 20px;
+}
+.fourth div h6{
+    width: 100%;
+   text-transform: capitalize;
+   font-size: 12px;
+}
+.fourth .fa-arrow-down{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+}
+.hotel{
+    background-color: #1631cae5;
+    padding: 5px;
+    color: white;
+    border-radius: 2px;
+    
+ }
+/* here the screen media out */
+@media (max-width:568px) {
+    .container{
+        width: 100%;
+        margin: 0 auto;
+  
+        text-align: center;
+        padding: 5px 0;
+        display:flex;
+        align-items: center;
+      
+    }
+    .firstPart{
+       display: flex;
+        align-items: center;
+       margin: 0 auto;
+       text-align: center;
+    }
+    
+    .second {
+        display:flex;
+        flex-wrap:nowrap;
+        align-items: center;
+    
+    }
+    .second .nest-second{
+        display: none;
+    }
+   
+    .fourth{
+       display: flex;
+        align-items: center;
+     
+    
+    }
+    .fourth div h6{
+        font-size:10px;
+        display: flex;
+        flex-wrap: nowrap;
+        text-wrap: nowrap;
+
+    }
+}
+
+
+/* here we can start main body*/ 
+
+
+.main{
+    margin: 10px 30px;
+    background-color: rgb(191, 231, 236);
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    font-weight: bold;
+  
+    
+}
+
+.main .dat-cal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 6%;
+    gap: 6px;
+}
+.main .icons{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    align-items: center;
+    gap: 10px;
+  
+}
+.icons div:nth-child(1){
+    margin-left: 15px;
+}
+.icons div{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    height: 30px;
+    
+}
+.icons div h6:nth-child(2){
+    background-color: rgb(233, 194, 194);
+    height:90%;
+    width: 20px;
+    margin-left: 3px;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 3px;
+}
+
+/* end section of main in content*/
+/*mobile screnn*/
+@media (max-width:568px) {
+    .main_2{
+       
+        background-color: rgba(235, 211, 235, 0.856);
+        margin: 10px 30px 0;
+        padding: 10px ;
+    }
+    .rooms{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: calc(100% - 25px);
+        margin:  auto ;
+        overflow: hidden;
+    }
+    .card{
+        width: 25%;
+        background-color: #d3d3d3;
+        margin: 10px 10px;
+        padding: 6px 6px;
+        position: relative;
+        margin: 6px auto;
+        transition: all 0.6s;
+        border: 1px solid black;
+        
+    }
+    .card:hover{
+        box-shadow: 0 4px  5px black;
+        transform: rotatey(360deg);
+                
+    }
+    .card_header{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        top: -6%;
+        right: 10%;
+    }
+    .card h2{
+       margin: 5px 0;
+       font-weight: bold;
+       font-size: 15px;
+       text-transform: capitalize;
+       
+    }
+    .card h3{
+        font-size: 15px;
+        
+        margin: 10px auto;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .card_footer{
+        padding: 6px  0;
+        margin: 3px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    /*main icons*/
+    .main{
+        display: block;
+        width: 90%;
+        margin: 5px auto;
+        padding: 5px 5px;
+    }
+    .main .dat-cal{
+        padding: 2px 5px;
+        height: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        width: 90%;
+       margin: 5px auto;
+       background-color: #31c9e4;
+    }
+    .main .icons{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin: 5px auto;
+        width:90%;
+        align-items: center;
+        padding: 5px ;
+        font-size: 8px;
+        background-color: rgb(164, 164, 218);
+        border-radius: 5px;
+        
+    }
+    .icons div{
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        height: 30px;
+        
+    }
+    .icons div h6:nth-child(2){
+        background-color: rgb(233, 194, 194);
+        height:90%;
+        width: 20px;
+        justify-content: center;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        padding: 0 3px;
+    }
+    /*end main icons*/
+    footer div{
+        text-align: center;
+        font-style: italic;
+        font-weight: bold;
+        padding: 10px 0;
+        margin: 0px auto ;
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        font-size: 10px;
+    }   
+    
+    
+}
+
+/*mobile screnn*/
+
+/* section two of main*/
+
+
+/*START SECTION HER*/
+@media (min-width:569px ) and (max-width:869px) {
+    .main_2{
+       
+        background-color: rgba(192, 223, 243, 0.932);
+        margin: 10px 30px 0;
+        padding: 10px ;
+       
+    }
+    .rooms{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: calc(100% - 10px);
+        margin:  auto ;
+        gap: 10px;
+   
+    }
+    .card{
+        width: 22%;
+        background-color: #d3d3d3;
+        margin: 10px 10px;
+        padding: 6px 6px;
+        position: relative;
+        margin: 6px auto;
+        transition: all 0.6s;
+        border: 1px solid black;
+        
+    }
+    .card:hover{
+        box-shadow: 0 4px  5px black;
+        transform: rotatey(360deg);
+                
+    }
+    .card_header{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        top: -6%;
+        right: 10%;
+    }
+    .card h3{
+       margin: 5px 0;
+       font-weight: bold;
+       font-size: 15px;
+       text-transform: capitalize;
+    }
+    .card h4, h5{
+        font-size: 15px;
+        text-align: center;
+        margin: 10px auto;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .card h4{
+        text-align: left;
+    }
+    .card_footer{
+        padding: 6px  0;
+        margin: 3px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .hotel{
+        background-color: #1631cae5;
+        padding: 5px;
+        color: white;
+        border-radius: 2px;
+        
+     }
+    
+}
+/* SECOND SETION*/
+
+@media (min-width:869px ) {
+    .main_2{
+       
+        background-color: rgba(192, 223, 243, 0.932);
+        margin: 10px 30px 0;
+        padding: 10px ;
+       
+    }
+    .rooms{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: calc(100% - 25px);
+        margin:  auto ;
+   
+    }
+    .card{
+        width: 12%;
+        background-color: #d3d3d3;
+        margin: 10px 10px;
+        padding: 6px 6px;
+        position: relative;
+        margin: 6px auto;
+        transition: all 0.6s;
+        border: 1px solid black;
+        
+    }
+    .card:hover{
+        box-shadow: 0 4px  5px black;
+        transform: rotatey(360deg);
+                
+    }
+    .card_header{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        position: absolute;
+        top: -6%;
+        right: 10%;
+    }
+    .card h3{
+       margin: 5px 0;
+       font-weight: bold;
+       font-size: 15px;
+       text-transform: capitalize;
+    }
+    .card h4, h5{
+        font-size: 15px;
+        text-align: center;
+        margin: 10px auto;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    .card h4{
+        text-align: left;
+    }
+    .card_footer{
+        padding: 6px  0;
+        margin: 3px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .hotel{
+        background-color: #1631cae5;
+        padding: 5px;
+        color: white;
+        border-radius: 2px;
+        
+     }
+    
+}
+
+/*footer styles*/
+footer .container{
+    background-color: rgb(176, 102, 245);
+    font-weight: bold;
+    margin: 0 auto;
+   
+}
+.container p{
+    text-transform: capitalize;
+        color: rgb(36, 29, 29);
+        margin: 0 auto;
+        text-align: center;
+}
+@media (max-width:568px) {
+    footer .container{
+        width: 100%;
+        padding: 5px 0;
+            
+     } 
+     .container p{
+        width: 90%;
+      
+     }
+  
+}
+@media (min-width:569px) {
+    footer .container{
+        width: 100%;
+       padding: 10px 0;
+        
+     }  
+     footer .container p{
+        
+        width: 90%;
+     
+     } 
+}
